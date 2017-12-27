@@ -1,0 +1,46 @@
+  .large-hero{
+    position: relative;
+
+    &__text-content{
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+      width: 100%;
+      text-align: center;
+    }
+    &__title{           /*nested css is used here*/
+      font-weight: 300;
+      color:#2f5572; /*blue color*/
+      margin: 0;
+      font-size: 1.1rem;
+      @mixin atSmall{
+        font-size: 2rem;
+      }
+      @mixin atmedium{
+        font-size: 2rem;
+      }
+      @mixin atlarge{
+        font-size: 3.2rem;
+      }
+    }
+    &__subtitle{
+      font-weight: 300;
+      color:#2f5572; /*blue color*/
+      font-size: 1.1rem;
+        margin: 0;
+        @mixin atSmall{
+          font-size: 2.9rem;
+        }
+    }
+    &__description{
+      color: #fff;
+      font-size: 1.875rem;/* why we are using rem insted of px, a rem is a relative size to the html page which can be set according to the page using rem , ----> a default font-size of any html page element  is about 16px*/
+      font-weight: 100; /*so writing 1.5rem means that we are multiplying it by 16 (16x1.5=24px). it will be 24 px.so why we are not using 24px instead of 1.5rem ,writing it in px it will size our elements to stone size
+      which will be conjusted to the viewer,or which will not be according to this site*/
+      text-shadow:  2px 2px 0 rgba(0,0,0,.1);
+      max-width: 30rem;/*480/16=30rem*/
+      margin-left: auto;/*?????* what auto means*/
+      margin-right: auto;
+    }
+  }

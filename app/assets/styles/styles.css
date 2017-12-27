@@ -1,0 +1,7 @@
+@import "normalize.css"; /*use this file in every projects.*/
+@import "modules/_large-hero";
+@import "modules/_btn";  /*should be included at the very top of css file.*/
+@import "base/_global";
+@import "base/_variables";
+@import "base/_mixins";/* this file is a receipe in which every receipe keep its own code.
+ in this way our file remains in super organised form.*/
